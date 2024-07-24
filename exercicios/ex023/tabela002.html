@@ -8,6 +8,13 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        
+        caption {
+            font-size: 1.5em;
+            background-color: lightgray;
+            font-weight: bold;
+            padding: 10px;
+        }
 
         table {
             border-collapse: collapse;
@@ -30,37 +37,95 @@
         .num {
             text-align: right;
         }
+
+        .position {
+            text-align: center;
+            
+        }
+
+        tbody > tr:nth-child(odd) {   
+            background-color: lightgray;
+            
+        }
+                                        /*odd= celulas impares 
+                                        2n= de 2 em 2 celulas
+                                        3n= de 3 em 3 celulas
+                                        even= celulas pares */
+
     </style>
 </head>
 <body>
+    <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width:10px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:150px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td class="position">1</td>
                 <td>São Paulo</td>
                 <td class="num">44 411 238</td>
             </tr>
             <tr>
+                <td class="position">2</td>
                 <td>Minas Gerais</td>
                 <td class="num">20 538 718</td>
             </tr>
             <tr>
+                <td class="position">3</td>
                 <td>Rio de Janeiro</td>
                 <td class="num">16 054 524</td>
             </tr>
             <tr>
+                <td class="position">4</td>
                 <td>Bahia</td>
                 <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td class="position">5</td>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+
+            <tr>
+                <td class="position">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+
+            <tr>
+                <td class="position">7</td>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+
+            <tr>
+                <td class="position">8</td>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+
+            <tr>
+                <td class="position">9</td>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+
+            <tr>
+                <td class="position">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <td></td>
+                <th scope="col">Total de Habitantes</th>
                 <td class="num"><strong>95.146.106</strong></td>
             </tr>
         </tfoot>
