@@ -6,6 +6,12 @@
     <title>Tabela 004</title>
     <style>
 
+        caption {
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
         body {
             font-family: Arial, sans-serif;
         }
@@ -38,13 +44,14 @@
 <body>
     <table>
         <thead>
-           <th>Grupo</th>
-           <th>Nomes</th>
-           <th colspan="3">Filmes</th>
+           <th scope="col">Grupo</th>
+           <th scope="col">Nomes</th>
+           <th scope="colgroup" colspan="3">Filmes</th>
         </thead>
+        <caption>Filmes Favoritos</caption>
         <tbody>
             <tr>
-                <td rowspan="3" class="genero"><strong>Mulheres</strong></td>
+                <th rowspan="3" class="genero" scope="rowgroup"><strong>Mulheres</strong></th>
                 <td>Ana Maria dos Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -66,7 +73,7 @@
             </tr>
 
             <tr>
-                <td rowspan="3" class="genero"><strong>Homens</strong></td>
+                <th scope="rowgroup" rowspan="3" class="genero"><strong>Homens</strong></th>
                 <td>Bruno Mendonça</td>
                 <td>Intocaveis</td>
                 <td>Amnésia</td>
