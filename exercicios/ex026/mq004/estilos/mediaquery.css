@@ -41,17 +41,48 @@ Grandes Telas: Acima de 1200px
 
 }
 
-@media screen and (min-widht: 992px) and (max-widht: 1200px) { /* Versão para PC */
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Versão para PC */
     
     body {
-        background-image: url('../imagens/back-pc.jpg');
-    }
-
+        background-image: url(../imagens/back-pc.jpg);
+     
+    }    
+    
     img#Phone {display: none;}
     img#PC {display: block;}
     img#Print {display: none;}
     img#Tv {display: none;}
     img#Tablet {display: none;}
 
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Versão para Tablet */
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }    
+
+    img#Phone { display: none; }
+    img#PC { display: none; }
+    img#Print { display: none; }
+    img#Tv { display: none; }
+    img#Tablet { display: block; }
+
+
+}
+
+@media screen and (min-width: 1200px) { /*Versão para Telas Grandes*/
+    
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#Phone { display: none; }
+    img#PC { display: none; }
+    img#Print { display: none; }
+    img#Tv { display: block; }
+    img#Tablet { display: none; } 
 }
 

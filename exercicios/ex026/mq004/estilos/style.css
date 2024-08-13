@@ -42,6 +42,7 @@ img {
     margin: auto;   
 }
 
+img#Phone {display: block;}
 img#PC {display: none;}
 img#Print {display: none;}
 img#Tv {display: none;}
