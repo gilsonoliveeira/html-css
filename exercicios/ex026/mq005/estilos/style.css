@@ -34,6 +34,10 @@ span#burguer:hover {
     cursor: pointer;
 }
 
+menu {
+    display: none;
+}
+
 header > menu > ul {
     display: block;
     list-style-type: none;
