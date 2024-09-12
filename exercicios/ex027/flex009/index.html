@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;  /* Usar tamanho em px define o tamanho das caixas internas porém so quando couber o que foi definido,caso diminua o conteudo vai ficar adaptivo.Sendo assim,ira diminuir o tamanho da caixa. Ao usar "auto",a tamanho da caixa vai ser definido pelo o que estiver escrito dentro dela */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">Bbbbbbbbbbbbbbbbbbbbbbb</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
