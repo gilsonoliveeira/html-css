@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+            flex-basis: 200px;
+        }
+
+        div.item1 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-shrink: 1;  /* Padrão é 1 e faz os itens dentro do container "encolher" ao diminuir o container.*/
+            flex-grow: 0; /* Padrão é 0 e ao ligar (colocar valor "1") faz com que os itens dentro do container estiquem e preencha todo os espaço por igual. */
+
+        }
+
+        div.item2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+
+        div.item3 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+            flex-shrink: 2;
+            flex-grow: 1;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+    </div>
+</body>
+</html>
