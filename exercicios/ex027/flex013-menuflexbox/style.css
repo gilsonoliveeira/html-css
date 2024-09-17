@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 * {
     margin: 0px;
     padding:0px;
@@ -9,12 +10,13 @@
 header {
     display: flex;
     flex-flow: row wrap;
-    width: 100vw;
+    
 }
 
 nav {
     display: flex;
     align-items: center;
+    margin-left: auto;
   
 }
 
@@ -35,6 +37,12 @@ section#menu a {
     color: white;
     border-radius: 5px;
     text-decoration: none;
+}
+
+section#menu a:hover{
+    color: black;
+    background-color: white;
+    transition-duration: 0.8s;
 }
 
 section#container {

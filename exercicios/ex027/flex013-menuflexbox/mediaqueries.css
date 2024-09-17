@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (max-width:520px) {
+
+    nav {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    a {
+        width: 96%;
+        text-align: center;
+    }
+
+    section#menu h1 {
+        width: 96%;
+        text-align: center;
+    }
+
+}
