@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            border: 1px solid black;
+            text-align: center;
+            background-color: lightblue;
+            
+        }
+
+        div#cxa {
+            flex: 0 1 200px;   /*a propriedade flex shrink,flex grow e flex basis pode ser substituida por flex: 0 1 200px (flex= grow,shrink,basis) */
+        }
+
+        div#cxb {
+            flex: 2 0 150px;
+        }
+
+        div#cxc {
+            flex: 1 8 auto;
+        }
+
+        /* Usar a propriedade padrão "flex: 0 1 auto" é a mesma coisa que usar flex: initial. */
+        /* Para deixar um container nada flexivel pode se usar a propriedade flex: none que é a abreviação de flex: 0 0 auto */
+        /* flex: auto é o maximo de flexibilidade que a caixa pode ter,abreviando assim o flex: 1 1 auto */
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxa">A</div>
+        <div class="item" id="cxb">B</div>
+        <div class="item" id="cxc">C</div>
+    </div>
+</body>
+</html>
